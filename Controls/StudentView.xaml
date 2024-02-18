@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projekt.Controls.StudentView"
+             >
+    <ContentView.Resources>
+        <StyleSheet Source="/Resources/Styles/StudentView.css"/>
+    </ContentView.Resources>
+    
+    <ContentView.Content>
+        <HorizontalStackLayout StyleClass="main-layout">
+            <Label Text="{Binding StudentNumber}"/>
+            <Label Text="{Binding Name}" />
+            <CheckBox x:Name="PresentCheckBox" IsChecked="{Binding IsPresent}" CheckedChanged="PresentCheckBox_CheckedChanged" />
+            <Button Text="Usuń" Clicked="RemoveButton_Clicked"/>
+        </HorizontalStackLayout>
+    </ContentView.Content>
+</ContentView>

@@ -1,0 +1,33 @@
+﻿^contentpage {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #34495e;
+    -maui-shell-title: teal;
+}
+
+.main-buttons {
+    spacing: 20;
+}
+
+.add-student-button {
+    background-color: #2ecc71;
+    color: white;
+    font-size: 16;
+}
+
+#random-student-button {
+    background-color: #e74c3c;
+    color: white;
+    font-size: 16;
+}
+
+VerticalStackLayout {
+    align-items: center;
+    justify-content: center;
+}
+
+Label {
+    font-size: 20;
+    color: #e67e22;
+}

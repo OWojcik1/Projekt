@@ -1,0 +1,18 @@
+﻿HorizontalStackLayout {
+   align-items: center;
+   justify-content: center;
+}
+
+
+Label, CheckBox, Button {
+    margin-right: 15;
+    font-size: 16;
+}
+
+Button {
+    background-color: #3498db;
+    color: white;
+    border-radius: 5;
+    padding: 5 10;
+}
+

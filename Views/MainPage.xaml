@@ -1,0 +1,31 @@
+<ContentPage
+    StyleClass="main-page"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Projekt.Controls"
+    x:Class="Projekt.Views.MainPage"
+    Title="System Losowania Ucznia">
+
+    <ContentPage.Resources>
+        <StyleSheet Source="/Resources/Styles/MainPage.css" />
+    </ContentPage.Resources>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Wczytaj" Clicked="LoadButton_Clicked"/>
+        <ToolbarItem Text="Stwórz nową klasę" Clicked="CreateButton_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <VerticalStackLayout>
+        <HorizontalStackLayout StyleClass="main-buttons">
+            <Button StyleClass="add-student-button" Text="Dodaj ucznia" Clicked="AddStudentButton_Clicked"/>
+            <Button StyleId="random-student-button" Text="Wylosuj Ucznia" Clicked="RandomStudentButton_Clicked" />
+            <Button Text="Wylosuj szczęśliwy numerek" Clicked="LuckyNumberButton_Clicked"/>
+            <Button Text="Usuń klasę" Clicked="DeleteClassButton_Clicked"/>
+        </HorizontalStackLayout>
+
+        <StackLayout x:Name="stackLayout">
+        </StackLayout>
+
+        <Label x:Name="LuckyNumberLabel" Text="Szczęsliwy numerek: nie wylosowano"/>
+    </VerticalStackLayout>
+</ContentPage>
